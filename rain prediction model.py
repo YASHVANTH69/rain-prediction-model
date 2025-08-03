@@ -1,10 +1,6 @@
 import pandas as pd
 
 
-'''from google.colab import files
-
-# This will pop up a file‑chooser dialog
-uploaded = files.upload()'''
 
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -66,4 +62,5 @@ sample['Actual'] = y_test
 
 sample['Predicted'] = y_pred
 sample['Probability'] = y_proba * 100
+
 print("\nSample Predictions:\n", sample[['Actual', 'Predicted', 'Probability']])
